@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="payment_provider_form" model="ir.ui.view">
+        <field name="name">Moamalat Provider Form</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
+        <field name="arch" type="xml">
+            <group name="provider_credentials" position="inside">
+                <group invisible="code != 'moamalat'" name="moamalat_credentials">
+                    <field name="moamalat_merchant_id"
+                           required="code == 'moamalat' and state != 'disabled'"
+                           placeholder="Merchant ID (MID)"/>
+                    <field name="moamalat_terminal_id"
+                           required="code == 'moamalat' and state != 'disabled'"
+                           placeholder="Terminal ID (TID)"/>
+                    <field name="moamalat_secure_key"
+                           required="code == 'moamalat' and state != 'disabled'"
+                           password="True"
+                           placeholder="Secure Key for payment requests"/>
+                    <field name="moamalat_notification_key"
+                           password="True"
+                           placeholder="Key for webhook verification (optional)"/>
+                </group>
+            </group>
+        </field>
+    </record>
+
+</odoo>
