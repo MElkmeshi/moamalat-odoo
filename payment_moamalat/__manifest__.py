@@ -4,14 +4,14 @@
     'name': 'Payment Provider: Moamalat',
     'version': '19.0.1.0.0',
     'category': 'Accounting/Payment Providers',
-    'summary': "A payment provider for Moamalat Bank (Egypt/Libya).",
+    'summary': "A payment provider for Moamalat Bank.",
     'description': """
 Moamalat Payment Provider
 =========================
 This module integrates Moamalat Bank payment gateway with Odoo.
 It supports card payments through the Moamalat Lightbox interface.
     """,
-    'author': 'Hajat',
+    'author': 'Mohamed Elkmeshi',
     'depends': ['payment'],
     'data': [
         'security/ir.model.access.csv',
