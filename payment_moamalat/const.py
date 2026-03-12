@@ -3,7 +3,7 @@
 # Currency mapping - Moamalat uses numeric currency codes
 CURRENCY_MAPPING = {
     'LYD': '434',  # Libyan Dinar
-    'EGP': '818',  # Egyptian Pound
+    'EGP': '818',  # EGP
     'USD': '840',  # US Dollar
     'EUR': '978',  # Euro
     'SAR': '682',  # Saudi Riyal
